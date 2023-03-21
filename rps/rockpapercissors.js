@@ -39,7 +39,7 @@ function playRound(event){
 }
 
 function endGame(winner){
-    document.getElementById("winner").innerHTML=`${winner} was the first to 5 wins! WOOWOOWOOWOOWOO!`;
+    document.getElementById("winner").innerHTML=`${winner} was the first to 5 wins!`;
     playerWins=0;
     computerWins=0;
 }
