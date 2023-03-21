@@ -23,11 +23,11 @@ function playRound(event){
         playerSelection=='rock'?winner='Player':playerSelection=='paper'?winner='Computer':winner='draw';
     }
     if(winner!='draw'){
-        document.getElementById('gameResults').innerHTML=`${playerSelection} player ${computerSelection} computer. ${winner} wins!`;
+        document.getElementById('gameResults').innerHTML=`Player picks ${playerSelection} : Computer picks ${computerSelection} <br> ${winner} wins!`;
 
     }
     else{
-        document.getElementById('gameResults').innerHTML=`${playerSelection} player ${computerSelection} computer. Draw!`;
+        document.getElementById('gameResults').innerHTML=`Player picks ${playerSelection} : Computer picks ${computerSelection} <br> Draw!`;
 
     }
     winner == 'Player' ? playerWins++ : winner=='Computer' ? computerWins++ : winner='draw';
