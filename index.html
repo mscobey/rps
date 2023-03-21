@@ -3,7 +3,7 @@
 <head>
     <title>Rock, Paper, Scissors</title>
     <script src="https://kit.fontawesome.com/060c2368fa.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="rockpapercissors.js"></script>
+    <script type="text/javascript" src="rps/rockpapercissors.js"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +12,7 @@
     <header>
         <h1><i>Rock, Paper, Scissors</i></h1>
     </header>
-    <div id="scoreboard">
+    <div class="scoreboard">
         <div id="gameResults" style="text-align: center;">
         
         </div>
@@ -26,13 +26,14 @@
     
 
     </div>
-    <div id="winner"></div>
+    <div class="winner" id="winner"><p>test</p></div>
     <div class="buttons">
         <button type="button" id="rock"><i class="fa-regular fa-hand-back-fist">ROCK</i></button>
         <button type="button" id="paper"><i class="fa-regular fa-hand"></i>PAPER</i></button>
         <button type="button" id="scissors"><i class="fa-regular fa-hand-scissors">SCISSORS</i></button>
     </div>
     <div class="rules">
+        <h3><i>Rules</i></h3>
         <p>Rock > Scissors > Paper > Rock <br> First to 5 wins in the winner!</p>
     </div>
 </div>
