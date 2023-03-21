@@ -8,13 +8,33 @@ header{
 }
 .scoreboard{
     grid-area: 2/1/3/4;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+#player{
+    grid-area:1/1/2/2;
+}
+#playerScore{
+    grid-area:2/1/3/2;
+}
+#gameResults{
+    grid-area:1/2/2/3;
 }
 .winner{
-    grid-area:3/2/4/3;
+    grid-area:2/2/3/3;
 }
+#computer{
+    grid-area:1/3/2/4;
+}
+#compScore{
+    grid-area:2/3/3/4;
+}
+
 .buttons{
     grid-area:4/2/5/3;
 }
 .rules{
-    grid-area: 5/3/6/3;
+    grid-area: 5/2/6/3;
 }
