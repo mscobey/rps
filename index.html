@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Rock, Paper, Scissors</title>
+    <script src="https://kit.fontawesome.com/060c2368fa.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="rockpapercissors.js"></script>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div class="buttons">
-<button type="button" id="rock">Rock</button>
-<button type="button" id="paper">Paper</button>
-<button type="button" id="scissors">Scissors</button>
-</div>
-<div id="scoreboard" style="margin-top: 100px;">
-    <div id="gameResults" style="text-align: center;">
+    
+<div class="container">
+    <header>
+        <h1><i>Rock, Paper, Scissors</i></h1>
+    </header>
+    <div id="scoreboard" style="margin-top: 100px;">
+        <div id="gameResults" style="text-align: center;">
         
-    </div>
-    <div id="player"  style="display:inline;float:left">
-        Player Wins: <div id="playerScore"></div>
-    </div>
+        </div>
+        <div id="player"  style="display:inline;float:left">
+            Player Wins: <div id="playerScore"></div>
+        </div>
 
-    <div id="computer" style="display: inline;float:right">
-        Computer Wins: <div id="compScore"></div>
-    </div>
-    <script type="text/javascript" src="rockpapercissors.js"></script>
+        <div id="computer" style="display: inline;float:right">
+            Computer Wins: <div id="compScore"></div>
+        </div>
+    
 
+        </div>
+    <div class="buttons" style="margin-top: 100px;">
+        <button type="button" id="rock"><i class="fa-light fa-hand-back-fist">ROCK</i></button>
+        <button type="button" id="paper"><i class="fa-light fa-hand">PAPER</i></button>
+        <button type="button" id="scissors"><i class="fa-light fa-hand-scissors">SCISSORS</i></button>
+    </div>
+    <div id="winner" style="margin-top: 100px;"></div>
 </div>
-<div id="winner" style="margin-top: 100px;"></div>
 </body>
 </html>
